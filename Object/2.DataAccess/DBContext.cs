@@ -11,9 +11,9 @@ namespace QLTDLIbrary._2.DataAccess
     {
         private static List<Customer> list = new List<Customer>()
         {
-            new VNCusomter{Id=1, Name="",Address="",Quantity=10000,Price=10000,Type="",Limit=8000},
-            new VNCusomter{Id=2, Name="",Address="",Quantity=6000,Price=10000,Type="",Limit=8000},
-            new ForeignerCustomer{Id=3,Name="",Address="",Quantity=10000,Price=10000,Nationality=""}
+            new Customer{Id=1, Name="",Address="",Quantity=10000,Price=10000,Type="",Limit=8000,Nationality="VN"},
+            new Customer{Id=2, Name="",Address="",Quantity=6000,Price=10000,Type="",Limit=8000,Nationality="VN"},
+            new Customer{Id=3,Name="",Address="",Quantity=10000,Price=10000,Nationality="US"}
         };
 
         private static DBContext instance = null;
@@ -34,19 +34,16 @@ namespace QLTDLIbrary._2.DataAccess
             }
         }
         public List<Customer>customers=>list;
-
-        public Customer GetCustomerByID(int id)
-        {
-            Customer customer = customers.SingleOrDefault(x=>x.Id==id);
-            return customer;
-        }
         public double total(Customer customer)
         {
-            double total;
-            Customer customer1 = GetCustomerByID(customer.Id);
-            if (customer1 != null)
+            double total=0;
+            if (customer.Nationality == "VN")
             {
-                total=0+0;   
+
+            }
+            else
+            {
+
             }
             return total;
         }

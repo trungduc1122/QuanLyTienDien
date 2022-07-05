@@ -13,5 +13,8 @@ namespace QLTDLIbrary._1.BusinessObject
         public string Address { get; set; }
         public int Quantity { get; set; }
         public int Price { get; set; }
+        public string Type { get; set; }
+        public int Limit { get; set; }
+        public string Nationality { get; set; }
     }
 }
