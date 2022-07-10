@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace QLTD
+namespace QLTDLibrary
 {
     public class CustomerNuocNgoai:Customer
     {
@@ -21,5 +21,12 @@ namespace QLTD
         {
             base.hienthi();
         }
-    }
+        public override void nhap()
+        {
+            base.nhap();
+            Console.Write("dia chi:");
+            diachi = Console.ReadLine();
+            Console.Write("quoc tich:");
+            quoctich = Console.ReadLine();
+        }
 }
