@@ -9,6 +9,11 @@ namespace QLTDLibrary
     public class CustomerNuocNgoai:Customer
     {
         public string quoctich { get; set; }
+
+        public CustomerNuocNgoai()
+        {
+        }
+
         public CustomerNuocNgoai(int id, string ten, string diachi, int soluong,int dongia,string quoctich) : base(id, ten, diachi, soluong,dongia)
         {
             this.quoctich = quoctich;

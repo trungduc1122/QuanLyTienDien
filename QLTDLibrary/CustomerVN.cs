@@ -10,6 +10,11 @@ namespace QLTDLibrary
     {
         private string kieu { get; set; }
         private int dinhmuc { get; set; }
+
+        public CustomerVN()
+        {
+        }
+
         public CustomerVN(int id, string ten, string diachi, int soluong,int dongia,string kieu,int dinhmuc) : base(id, ten, diachi, soluong,dongia)
         {
             this.kieu = kieu;

@@ -14,6 +14,10 @@ namespace QLTDLibrary
         public int soluong { get; set; }
         public int dongia { get; set; }
 
+        public Customer()
+        {
+        }
+
         public Customer(int id, string ten, string diachi, int soluong, int dongia)
         {
             this.id = id;
